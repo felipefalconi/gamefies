@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.banner {
+    height: 880px;
+    background: rgb(46,140,131);
+    background-image: linear-gradient(90deg, rgba(46,140,131,0.82) 0%, rgba(18,75,70,1) 35%), url(img/Firefly\ imagem\ de\ funcionários\ felizes\ no\ escritório\ trabalhando\ sendo\ gamificados\ preto\ e\ branco\ 50\ 1.png);
+}
