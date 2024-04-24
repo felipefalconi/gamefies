@@ -14,14 +14,79 @@ html {
 }
 
 .container-grid {
-    width: 80vw;
-    max-width: 1400px;
+    width: 77.083vw;
+    max-width: 1480px;
 
     margin: 0 auto;
 }
 
 .banner {
-    height: 880px;
-    background: rgb(46,140,131);
-    background-image: linear-gradient(90deg, rgba(46,140,131,0.82) 0%, rgba(18,75,70,1) 35%), url(img/Firefly\ imagem\ de\ funcionários\ felizes\ no\ escritório\ trabalhando\ sendo\ gamificados\ preto\ e\ branco\ 50\ 1.png);
+    height: 750px;
+
+    background-image: linear-gradient(90deg, rgba(18, 75, 70, 1) 0%, rgba(46, 140, 131, 0.8) 100%), url(img/Firefly\ imagem\ de\ funcionários\ felizes\ no\ escritório\ trabalhando\ sendo\ gamificados\ preto\ e\ branco\ 50\ 1.png);
+    background-repeat: no-repeat;
+
+}
+
+header {
+    height: 117px;
+}
+
+header .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    font-size: 16px;
+    font-family: "Poppins";
+
+    color: #ebebeb;
+
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #13293D;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.icones-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.container-grid.conteudo-banner {
+    height: 470px;
+    width: 1373px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-grid.conteudo-banner p {
+    color: #ebebeb;
+
+    font-family: "Outfit";
+    font-size: 90px;
+    font-weight: medium;
+    text-align: center;
 }
