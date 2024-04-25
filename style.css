@@ -16,7 +16,7 @@ html {
 .container-grid {
     width: 77.083vw;
     max-width: 1480px;
-
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
@@ -32,18 +32,28 @@ header {
     height: 117px;
 }
 
+header img {
+    width: 384px;
+    height: 63px;
+
+    display: flex;
+    justify-content: center;
+}
+
 header .container-grid {
     height: 100%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
+    gap: 20px;
 }
 
 .menu {
     width: 300px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -60,17 +70,21 @@ header .container-grid {
     color: #13293D;
 }
 
-.logo {
+.img {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
 }
 
 .icones-redes {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+
+}
+
+.icones-redes:hover {
+    color: #13293D;
 }
 
 .container-grid.conteudo-banner {
@@ -89,4 +103,40 @@ header .container-grid {
     font-size: 90px;
     font-weight: medium;
     text-align: center;
+}
+
+.portfolio button {
+    border-radius: 25px;
+    width: 268px;
+    height: 49px;
+    background-color: #13293D;
+    color: #ebebeb;
+    font-family: "Outfit";
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    justify-content: center;
+    margin-top: -15vh;
+    border: none;
+}
+
+.portfolio button:hover {
+    background-color: #30679B;
+    color: #1E1A1B;
+}
+
+.parceiros {
+   text-align: center;
+   font-family: "Outfit";
+   font-size: '22px';
+   padding-top: 65px;
+}
+
+.conteudo-parceiros {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
 }
