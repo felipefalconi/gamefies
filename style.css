@@ -34,7 +34,7 @@ header {
 
 header img {
     width: 384px;
-    
+
 
     display: flex;
     justify-content: center;
@@ -51,7 +51,7 @@ header .container-grid {
 }
 
 .menu {
-    width: 300px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,10 +64,12 @@ header .container-grid {
     color: #ebebeb;
 
     text-decoration: none;
+
 }
 
 .menu a:hover {
     color: #13293D;
+
 }
 
 .img {
@@ -80,7 +82,7 @@ header .container-grid {
     justify-content: space-between;
     align-items: baseline;
     gap: 20px;
-
+    width: 250px;
 }
 
 .icones-redes:hover {
@@ -105,7 +107,7 @@ header .container-grid {
     text-align: center;
 }
 
-.portfolio button {
+.gamifique button {
     border-radius: 25px;
     width: 268px;
     height: 49px;
@@ -120,11 +122,13 @@ header .container-grid {
     justify-content: center;
     margin-top: -15vh;
     border: none;
+    transition: 300ms;
 }
 
-.portfolio button:hover {
+.gamifique button:hover {
     background-color: #30679B;
     color: #1E1A1B;
+    transition: 300ms;
 }
 
 .parceiros p {
@@ -190,14 +194,42 @@ header .container-grid {
     text-align: center;
 }
 
+.portfolio {
+    margin: 0;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio button {
+    border-radius: 25px;
+    width: 280px;
+    height: 55px;
+    background-color: #13293D;
+    color: #ebebeb;
+    font-family: "Outfit";
+    font-size: 23px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    border: none;
+    transition: 300ms;
+}
+
+.portfolio button:hover {
+    background-color: #30679B;
+    color: #1E1A1B;
+    transition: 300ms;
+}
+
+
 .card-sobre {
     margin: 0 auto;
-    margin-top: 248px;
     height: 350px;
     width: 1250px;
     background-color: #13293D;
     border-radius: 50px;
-    display: flex;
     flex-wrap: wrap;
     align-content: center;
 }
@@ -209,12 +241,46 @@ header .container-grid {
     color: white;
     font-weight: 500;
     text-align: center;
+    margin: 25px 45px;
+    margin-top: 10px;
 }
 
 .card-sobre p {
     font-family: "Poppins";
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     font-weight: 400;
     text-align: left;
+    margin: 15px 45px;
+}
+
+#banner-2 {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 114px;
+    background-image: linear-gradient(90deg, rgba(18, 75, 70, 1) 0%, rgba(46, 140, 131, 0.8) 100%)
+}
+
+#banner-2 p {
+    font-family: "Outfit";
+    font-size: 65px;
+    color: #ebebeb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-3 {
+    height: 650px;
+    background-image: linear-gradient(90deg, rgba(19, 41, 61, 1) 0%, rgba(51, 110, 163, 0.8) 100%), url(img/banner3.png);
+
+}
+
+#secao-formulario {
+text-align: center;
+
+ background-color: #13293D;
 }
