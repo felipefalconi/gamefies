@@ -136,6 +136,7 @@ header .container-grid {
     font-family: "Outfit";
     font-size: 22px;
     padding-top: 65px;
+    font-weight: 500;
 }
 
 .conteudo-parceiros {
@@ -232,6 +233,9 @@ header .container-grid {
     border-radius: 50px;
     flex-wrap: wrap;
     align-content: center;
+    -webkit-box-shadow: 0px 12px 33px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 12px 33px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 12px 33px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card-sobre h2 {
@@ -276,11 +280,157 @@ header .container-grid {
 .banner-3 {
     height: 650px;
     background-image: linear-gradient(90deg, rgba(19, 41, 61, 1) 0%, rgba(51, 110, 163, 0.8) 100%), url(img/banner3.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 730px;
+    height: 469px;
+    margin: 0 auto;
+    background-color: #13293D;
+    border-radius: 30px;
+    padding: 52px;
+}
+
+.form h2 {
+    font-family: "Outfit";
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: -20px;
+    color: white;
+}
+
+.card-formulario {
+    width: 574px;
+
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card-formulario-descricao {
+    width: 574px;
+
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card-formulario input {
+    height: 46px;
+    color: rgb(235, 235, 235, 0.2);
+    background-color: #13293D;
+    border: 2px solid #2E8C83;
+    border-radius: 25px;
+    text-indent: 10px;
+
+    outline: none;
 
 }
 
-#secao-formulario {
-text-align: center;
+.card-formulario-descricao textarea {
+    color: #ebebeb;
+    background-color: #13293D;
+    border: 2px solid #2E8C83;
+    border-radius: 25px;
 
- background-color: #13293D;
+    outline: none;
+    padding: 10px;
+    resize: none;
+}
+
+.card-formulario label,
+.card-formulario-descricao label {
+    margin-bottom: 10px;
+    font-family: "Outfit";
+    font-size: 15px;
+    font-weight: 100;
+    color: #ebebeb;
+}
+
+.card-formulario input,
+.card-formulario-descricao textarea {
+    font-family: "Outfit";
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.card-formulario::placeholder,
+.card-formulario-descricao::placeholder {
+    color: #ebebeb;
+}
+
+.card-formulario input:focus,
+.card-formulario-descricao textarea:focus {
+    outline: 1px solid #2E8EE5;
+}
+
+.form button {
+    height: 30px;
+    width: 202px;
+    background-color: transparent;
+    color: #2E8C83;
+
+    border: 2px solid #2E8C83;
+    border-radius: 26px;
+
+    font-size: 18px;
+    font-family: "Outfit";
+    font-weight: 200;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #30679B;
+    border: none;
+}
+
+footer {
+    background-color: #2E8C83;
+}
+
+footer .container-grid {
+    height: 212px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.icones p {
+    color: #ebebeb;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    font-family: "Outfit";
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: none;
 }
