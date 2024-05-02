@@ -129,6 +129,7 @@ header .container-grid {
     background-color: #30679B;
     color: #1E1A1B;
     transition: 300ms;
+    cursor: pointer;
 }
 
 .parceiros p {
@@ -222,6 +223,7 @@ header .container-grid {
     background-color: #30679B;
     color: #1E1A1B;
     transition: 300ms;
+    cursor: pointer;
 }
 
 
@@ -399,15 +401,18 @@ header .container-grid {
     text-transform: capitalize;
 
     cursor: pointer;
+    transition: 500ms;
 }
 
 .form button:hover {
     background-color: #30679B;
     border: none;
+    transition: 500ms;
 }
 
 footer {
     background-color: #2E8C83;
+    width: 100%;
 }
 
 footer .container-grid {
@@ -418,19 +423,47 @@ footer .container-grid {
     justify-content: space-between;
 }
 
+
 .icones {
     display: flex;
     align-items: center;
-    gap: 100px;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.icones p {
+
+.icone-telefone,
+.icone-email,
+.icone-instagram,
+.icone-facebook,
+.icone-linkedin {
+    display: flex; 
+    align-items: center; 
+    margin-right: 20px; 
+}
+
+.icones a {
     color: #ebebeb;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
+    margin-right: 5px; 
     font-family: "Outfit";
     font-size: 20px;
     text-decoration: none;
-    border-bottom: none;
 }
+
+.icones a:hover {
+    color: #13293D;
+}
+
+.icone-facebook {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    header {
+        position: relative;
+    }
+
+    nav.menu {
+        position: relative;
+        font-size: 10px;
+    }
