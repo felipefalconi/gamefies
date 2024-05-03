@@ -89,22 +89,24 @@ header .container-grid {
     color: #13293D;
 }
 
-.container-grid.conteudo-banner {
+.conteudo-banner {
+    margin: 0 auto;
     height: 470px;
-    width: 1373px;
+    width: 1300px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container-grid.conteudo-banner p {
+.conteudo-banner p {
     color: #ebebeb;
 
     font-family: "Outfit";
     font-size: 90px;
     font-weight: medium;
     text-align: center;
+    justify-content: center;
 }
 
 .gamifique button {
@@ -401,13 +403,13 @@ header .container-grid {
     text-transform: capitalize;
 
     cursor: pointer;
-    transition: 500ms;
+    transition: 600ms;
 }
 
 .form button:hover {
     background-color: #30679B;
     border: none;
-    transition: 500ms;
+    transition: 600ms;
 }
 
 footer {
@@ -437,33 +439,110 @@ footer .container-grid {
 .icone-instagram,
 .icone-facebook,
 .icone-linkedin {
-    display: flex; 
-    align-items: center; 
-    margin-right: 20px; 
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
 
 .icones a {
     color: #ebebeb;
-    margin-right: 5px; 
+    margin-right: 5px;
     font-family: "Outfit";
     font-size: 20px;
     text-decoration: none;
+    transition: 500ms;
 }
 
 .icones a:hover {
     color: #13293D;
+    transition: 500ms;
 }
 
 .icone-facebook {
     margin-right: 0;
 }
 
-@media screen and (max-width: 1300px) {
-    header {
-        position: relative;
+@media only screen and (max-width: 1300px) {
+
+    .banner {
+        font-size: 14px;
     }
 
-    nav.menu {
+    header {
         position: relative;
-        font-size: 10px;
+        height: 117px;
     }
+
+    header img {
+        width: 340px;
+    }
+
+    header .container-grid {
+        gap: 10px;
+    }
+
+    .card-sobre {
+        width: 1000px;
+    }
+
+    .menu {
+        width: 250px;
+    }
+
+    .conteudo-banner p {
+        font-size: 75px;
+    }
+
+    .conteudo-banner {
+        width: 1000px; 
+    }
+
+    .menu a {
+        font-size: 14px;
+
+    }
+
+    .icones-redes {
+        width: 200px;
+    }
+
+    .gamifique button {
+        margin-top: -25vh;
+    }
+
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    header img {
+        width: 300px;
+    }
+    .menu {
+        width: 200px;
+    }
+
+    .container-grid.conteudo-banner {
+        width: 1050px;
+    }
+
+    .card-sobre {
+        width: 1000px;
+    }
+
+    .container-grid.conteudo-banner p {
+        font-size: 75px;
+    }
+
+    .conteudo-parceiros img {
+        width: 50%;
+    }
+
+    #banner-2 p {
+        font-size: 50px;
+    }
+
+    .icones a {
+        font-size: 17px;
+    }
+}
