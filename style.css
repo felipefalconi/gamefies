@@ -32,6 +32,10 @@ header {
     height: 117px;
 }
 
+header button {
+display: none;
+}
+
 header img {
     width: 384px;
 
