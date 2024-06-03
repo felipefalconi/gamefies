@@ -33,7 +33,7 @@ header {
 }
 
 header button {
-display: none;
+    display: none;
 }
 
 header img {
@@ -73,7 +73,7 @@ header .container-grid {
 
 .menu a:hover {
     color: #13293D;
-
+    transition: 400ms;
 }
 
 .img {
@@ -343,18 +343,17 @@ header .container-grid {
 
 .card-formulario input {
     height: 46px;
-    color: rgb(235, 235, 235, 0.2);
+    color: #FFFFFF;
     background-color: #13293D;
     border: 2px solid #2E8C83;
     border-radius: 25px;
     text-indent: 10px;
 
     outline: none;
-
 }
 
 .card-formulario-descricao textarea {
-    color: #ebebeb;
+    color: #FFFFFF;
     background-color: #13293D;
     border: 2px solid #2E8C83;
     border-radius: 25px;
@@ -378,10 +377,11 @@ header .container-grid {
     font-family: "Outfit";
     font-size: 15px;
     font-weight: 100;
+    color: #FFFFFF;
 }
 
-.card-formulario::placeholder,
-.card-formulario-descricao::placeholder {
+.card-formulario input::placeholder,
+.card-formulario-descricao textarea::placeholder {
     color: #ebebeb;
 }
 
@@ -389,6 +389,7 @@ header .container-grid {
 .card-formulario-descricao textarea:focus {
     outline: 1px solid #2E8EE5;
 }
+
 
 .form button {
     height: 30px;
